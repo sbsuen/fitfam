@@ -1,5 +1,6 @@
 # FitFam
 * [Introduction]()
+
 ##Introduction
 
 FitFam is an application created to allow a user to create workouts from a
