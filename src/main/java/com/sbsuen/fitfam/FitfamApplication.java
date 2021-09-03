@@ -18,43 +18,4 @@ public class FitfamApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(FitfamApplication.class, args);
 	}
-
-	/*
-	@Bean
-	CommandLineRunner runner(ExerciseRepository exerciseRepository){
-		return args -> {
-			Exercise pushups = new Exercise(
-					"Standard Push-Up",
-					"Chest",
-					List.of("Shoulders", "Abs", "Triceps"),
-					ExerciseType.STRENGTH,
-					"Bodyweight",
-					ExerciseDifficulty.BEGINNER,
-					"Description goes here....."
-					);
-			Exercise squats = new Exercise(
-					"Bodyweight Squats",
-					"Glutes",
-					List.of("Quads","Hamstrings","Abdominals","Calves"),
-					ExerciseType.STRENGTH,
-					"Bodyweight",
-					ExerciseDifficulty.BEGINNER,
-					"Description goes here....."
-			);
-			Exercise benchPress = new Exercise(
-					"Barbell Bench Press",
-					"Chest",
-					List.of("Shoulders","Triceps"),
-					ExerciseType.STRENGTH,
-					"Barbell Weights",
-					ExerciseDifficulty.INTERMEDIATE,
-					"Description goes here....."
-			);
-			if (exerciseRepository.count() > 0) exerciseRepository.deleteAll();
-			exerciseRepository.insert(pushups);
-			exerciseRepository.insert(squats);
-			exerciseRepository.insert(benchPress);
-		};
-	}
-	*/
 }
